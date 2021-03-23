@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "b60ef6b3-da6c-444b-a61b-6f9c58c9a065",
+		"name": "serempre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "localhost:3000/api/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":1,\n    \"size\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/products/search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":1,\n    \"size\":3,\n    \"name\":\"Ch\",\n    \"category\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/search",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ProductName\":\"BBC\",\n    \"SupplierId\":\"1\",\n    \"CategoryId\":\"1\",\n    \"QuantityPerUnit\":\"10 boxes x 20 bags\",\n    \"UnitPrice\":\"18\",\n    \"UnitsInStock\":\"39\",\n    \"UnitsOnOrder\":\"0\",\n    \"ReorderLevel\":\"10\",\n    \"Discontinued\":\"0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "provider",
+			"item": [
+				{
+					"name": "localhost:3000/api/providers/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/providers/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"providers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/providers/:id/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/providers/:id/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"providers",
+								":id",
+								"products"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "23"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/providers/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CompanyName\":\"WINNER\",\n    \"ContactName\":\"Luisa Gomez\",\n    \"ContactTitle\":\"SEO\",\n    \"Address\":\"25 de San luis\",\n    \"City\":\"San andres isla\",\n    \"Region\":\"San andres isla\",\n    \"PostalCode\":\"32323\",\n    \"Country\":\"Colombia\",\n    \"Phone\":\"232323233223\",\n    \"Fax\":\"23232323233\",\n    \"HomePage\":\"www.winner.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/providers/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"providers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/providers/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/providers/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"providers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "localhost:3000/api/categories/:id/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":2,\n    \"size\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/categories/:id/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories",
+								":id",
+								"products"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
