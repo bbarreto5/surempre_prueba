@@ -32,7 +32,7 @@ Para la construcción de la solución utilice el ORM sequelize el cual me genero
 ## Paso a paso
 
 - clonar repositorio https://github.com/bbarreto5/surempre_prueba
-- cd Proyecto
+- cd surempre_prueba/Proyecto
 - Modificar los valores del entorno development en el archivo config/config.json
 - sequelize db:create
 - sequelize db:migrate
